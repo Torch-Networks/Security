@@ -1,5 +1,3 @@
-Sure! Here's the updated version of the document with "Internal App" changed to "Security":
-
 # Security Project Documentation
 
 ## Introduction
