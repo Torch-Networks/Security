@@ -51,7 +51,7 @@ remote_state {
   backend = "s3"
 
   config = {
-    bucket         = join("-", [get_env("BUCKET", "tf-bucket"), "audit", local.aws_account_id, local.region])
+    bucket         = join("-", [get_env("BUCKET", "tf-bucket"), "security", local.aws_account_id, local.region])
     dynamodb_table = join("-", [get_env("DYNAMODB_TABLE", "terraform-locks"), local.aws_account_id])
     encrypt        = true
     region         = local.region
